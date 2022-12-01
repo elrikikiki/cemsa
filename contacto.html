@@ -61,7 +61,9 @@
         }
 
         @media (min-width: 1200px){
-          
+          .marginDesktop {
+            margin-left: 30px;
+          }
         }
 
         @media (min-width: 1400px){
@@ -70,56 +72,61 @@
       </style>
 </head>
   <body class="fontFamily">
-    <!-- NAVBAR -->
-    <nav id="mobile-back" class="bg-white navbar fontFamily navbar-expand-lg sticky-top letraAzul mt-2">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/cem-logo.png" class="rounded" id="respLogo" alt="Logotipo de CEM" height="68" data-aos="flip-left"
-          data-aos-easing="ease-out-cubic" data-aos-duration="3000" data-aos-once="true">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between fw-bold mt-2" id="navbarNav">
-          <div class="nav-item col-sm-5 mb-4"></div>
-          
-            <div class="nav-item col-sm-1 mb-4 marginNav ">
-              <a href="nosotros.html" class="sinSubrayado mouseHeader letraAzul">
-              NOSOTROS
-            </a>
-            </div>
-         
-          <div class="nav-item dropdown mb-4">
-            <a class="nav-link dropdown-toggle letraAzul mouseHeader marginNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              SERVICIOS
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="as4.html">Guardia</a></li>
-                <li><a class="dropdown-item" href="as5.html">Traslados</a></li>
-            </ul>
-        </div>
-          <div class="nav-item col-sm-1 mb-4 marginNav">
-            <a href="novedades.html" class="sinSubrayado mouseHeader letraAzul">NOVEDADES</a>
-            </div>
-          <div class="nav-item  mb-4">
-            <a class="nav-link  bg-orange text-white rounded p-2 marginNav"  href="turnero.html">
-             TURNERO
-            </a>
-  
-        </div>
-          <div class="nav-item col-sm-1 mb-4 marginNav">
-            <a href="contacto.html" class="sinSubrayado mouseHeader letraAzul">CONTACTO</a>
+   <!-- NAVBAR -->
+   <nav id="mobile-back" class="bg-white border-2 border-bottom navbar fontFamily navbar-expand-lg sticky-top letraAzul mt-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/cem-logo.png" class="rounded" id="respLogo" alt="Logotipo de CEM" height="68" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic" data-aos-duration="3000" data-aos-once="true">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between fw-bold mt-2" id="navbarNav">
+        <div class="nav-item col-sm-4 mb-4"></div>
+        
+          <div class="nav-item col-sm-1 mb-4 text-center marginDesktop">
+            <a href="nosotros.html" class="sinSubrayado mouseHeader letraAzul ">
+            NOSOTROS
+          </a>
           </div>
+       
+        
+        <div class="nav-item dropdown mb-4 text-center marginDesktop">
+          <a class="nav-link dropdown-toggle letraAzul mouseHeader " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SERVICIOS
+          </a>
+          <ul class="dropdown-menu">
+            <li class="mb-2"><a class="sinSubrayado letraAzul ms-3" href="guardia.html">Guardia</a></li>
+            <li class="mb-2"><a class="sinSubrayado letraAzul ms-3 " href="traslados.html">Traslados</a></li>
+            <li class="mb-2"><a class="sinSubrayado letraAzul ms-3" href="internacion.html">Internación</a></li>
+            <li class="mb-2"><a class="sinSubrayado letraAzul ms-3" href="consultorios.html">Consultorios</a></li>
+          </ul>
+      </div>
+
+        <div class="nav-item col-sm-1 mb-4 text-center marginDesktop">
+          <a href="novedades.html" class="sinSubrayado mouseHeader letraAzul ">NOVEDADES</a>
+          </div>
+
+        <div class="nav-item col-sm-1 mb-4 text-center marginDesktop bg-orange p-2 rounded">
+          <a class="nav-link text-white" href="turnero.html">
+           PAGO
+          </a>
+
+      </div>
+        <div class="nav-item col-sm-1 mb-4 text-center marginDesktop">
+          <a href="contacto.html" class="sinSubrayado mouseHeader letraAzul ">CONTACTO</a>
         </div>
       </div>
-    </nav>
-  <!-- NAVBAR -->
+    </div>
+  </nav>
+<!-- NAVBAR -->
 
     <!-- NUMEROS -->
     <div class="container-fluid bg-light">
         <div class="container">
             <div class="row pb-3 text-center" data-aos="fade-right" data-aos-duration="3000">
-                <h2 class="display-6 fw-bold colorAzul pt-3 mb-3">Contactá con nosotros</h2>
+                <h2 class="display-6 fw-bold colorVerdeClaro pt-3 mb-3">Contactá con nosotros</h2>
                 <h5 class="text-secondary fw-bold mb-5">Para cualquier consulta que quieras realizarnos, contacta con nosotros por estas vías y te responderemos lo antes posible.</h5>
             </div>
         </div>
@@ -131,10 +138,10 @@
                         <img src="./assets/cem-logo.png" width="100%" alt="Logo CEM">
                     </div>
                     <div class="col-md-4 text-secondary">
-                        <p class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <p class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                           </svg> 03548-15402072</p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="me-2 bi bi-envelope-check" viewBox="0 0 16 16">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="me-2 bi bi-envelope-check" viewBox="0 0 16 16">
                             <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
                             <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
                           </svg> Bermudez_guillermo@hotmail.com</p>
@@ -146,25 +153,25 @@
                         <img src="./assets/bermudezLogo.png" width="100%" alt="Logo CEM">
                     </div>
                     <div class="col-md-4 text-secondary">
-                        <p class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <p class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                           </svg> 03548-15402072</p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="me-2 bi bi-envelope-check" viewBox="0 0 16 16">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="me-2 bi bi-envelope-check" viewBox="0 0 16 16">
                             <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
                             <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
                           </svg> Bermudez_guillermo@hotmail.com</p>
                     </div>
                 </div>
                 <!-- AMANTAR -->
-                <div class="row pb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="row pb-5 justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="3000">
                     <div class="col-md-3 pb-4">
                         <img src="./assets/logoFundacion.png" width="100%" alt="Logo CEM">
                     </div>
                     <div class="col-md-4 text-secondary">
-                        <p class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <p class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                           </svg> 03548-15402072</p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="me-2 bi bi-envelope-check" viewBox="0 0 16 16">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="me-2 bi bi-envelope-check" viewBox="0 0 16 16">
                             <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
                             <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
                           </svg> Bermudez_guillermo@hotmail.com</p>

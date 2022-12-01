@@ -1,9 +1,76 @@
 .mouseHeader:hover {
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #FFF212;
   }
   .mouseBtn:hover {
     background-color: #DD9BDA; 
     
+  }
+  .zoomImg {
+    transition: transform 0.3s;
+  }
+  .zoomImg:hover {
+    transform: scale(1.1);
+  }
+  .bg-service-card1 {
+    height: 30rem;
+    background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
+    url(https://images.unsplash.com/photo-1550831106-f8d5b6f1abe9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-service-card2 {
+    height: 30rem;
+    background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
+    url(https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-service-card3 {
+    height: 30rem;
+    background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
+    url(https://images.unsplash.com/photo-1610995181977-0283a334a65c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-service-card4 {
+    height: 30rem;
+    background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
+    url(https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1262&q=80);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /* https://images.unsplash.com/photo-1610995181977-0283a334a65c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 */
+
+  .img {
+    height: 10rem;
+    background:
+    url(https://tudinerito.com/blog/wp-content/promos-app.jpg);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .info {
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 251, 0, 0.719);
+    visibility: hidden;
+  }
+  .img:hover .info {
+    visibility: visible;
+  }
+  .mouseImg:hover {
+    background-color: rgba(255, 255, 0, 0.692);
   }
   .sinSubrayado {
     text-decoration: none;
@@ -19,7 +86,7 @@
     transition: all infinite;
   }
   .mouseBtn3:hover {
-    background-color: rgb(248, 189, 80);
+    background-color: rgb(53, 194, 76);
   }
 .bg-white {
     background-color: white;
@@ -57,7 +124,33 @@
 .bg-green-soft:hover {
   background-color: #7cdd9e;
 }
-
+.bgGreenOscuro {
+  background-color: #00A859;
+}
+.bg-yellow {
+  background-color: #FFF212;
+}
+.colorWarning {
+  color: orange;
+}
+.hoverNum {
+  color: black;
+}
+.hoverNum:hover {
+  color: #186C9F;
+}
+.colorYellow {
+  color: #FFF212 ;
+}
+.bg-fondito {
+  height: 100%;
+    background:
+    url(./assets/fondito.png);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .imagen2InicioCarrusel {
     height: 30rem;
     background:linear-gradient(rgba(95, 247, 153, 0.5), rgba(178, 22, 218, 0.5)), 
@@ -121,7 +214,7 @@
   }
   .imagen1InicioCarrusel {
     height: 30rem;
-    background:linear-gradient(rgba(23, 114, 233, 0.5), rgba(219, 172, 18, 0.5)), 
+    background:linear-gradient(rgba(54, 243, 126, 0.35), rgba(215, 248, 28, 0.35)), 
     url(https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1185&q=80);
     /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
     background-repeat: no-repeat;
@@ -131,7 +224,7 @@
   @media only screen and (min-width:200px) and (max-width:992px){
     .imagen1InicioCarrusel {
       height: 20rem;
-      background:linear-gradient(rgba(23, 114, 233, 0.5), rgba(219, 172, 18, 0.5)), 
+      background:linear-gradient(rgba(54, 243, 126, 0.3), rgba(215, 248, 28, 0.3)), 
       url(https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1185&q=80);
       /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
       background-repeat: no-repeat;
@@ -161,6 +254,16 @@
     height: 30rem;
     background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(51, 51, 51, 0.5)), 
     url(https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-telefono-urg {
+    /* https://images.unsplash.com/photo-1564732005956-20420ebdab60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 */
+    height: 100%;
+    background:linear-gradient(rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.63)), 
+    url(https://images.unsplash.com/photo-1564732005956-20420ebdab60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
     background-repeat: no-repeat;
     background-position: center;
