@@ -11,6 +11,15 @@
   .zoomImg:hover {
     transform: scale(1.1);
   }
+  .bg-ambulancia {
+    height:100%;
+    background:linear-gradient(rgba(255, 255, 255, 0.753), rgba(175, 172, 172, 0.904)), 
+    url(./assets/bg-ambulancia.jpeg);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .bg-service-card1 {
     height: 30rem;
     background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
@@ -178,27 +187,98 @@
     }
     
   }
-  .imagen3InicioCarrusel {
-    height: 30rem;
-    background:linear-gradient(rgba(40, 189, 64, 0.5), rgba(35, 96, 207, 0.5)), 
-    url(https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
-    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  @media only screen and (min-width:200px) and (max-width:992px){
-    .imagen3InicioCarrusel {
-      height: 20rem;
-      background:linear-gradient(rgba(40, 189, 64, 0.5), rgba(35, 96, 207, 0.5)), 
-      url(https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
-      /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  }
+
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-63 {
+  background: linear-gradient(to bottom right, #d5e91c, #00A859);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-63:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(85, 239, 71, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-63:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 239, 121, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.button-64 {
+  background: linear-gradient(to bottom right, #e9a11c, #0027a8);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-64:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(85, 239, 71, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-64:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 239, 121, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
   .bg-amigos {
     height: 30rem;
     background:linear-gradient(rgba(77, 77, 77, 0.4), rgba(250, 250, 250, 0.1)), 
