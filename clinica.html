@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CEM</title>
+    <title>CEM - CLINICA BERMUDEZ</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="./assets/faviconCem.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -18,20 +18,11 @@
     <style>
 
         @media (min-width: 200px){
-          .borderNovedades {
-    border-bottom:0px;
-  }
-  .borderNovedades1 {
-    border-bottom:2px solid rgba(252, 252, 0, 0.562);
-  }
-          .borderBottom {
-            border-bottom: 3px solid orange;
+          .margin-navbar {
+            margin-right: 30px;
           }
-          .marginTop {
-            margin-top: 30px;
-          }
-          .marginBottom2 {
-            margin-bottom: 20px;
+          .margin-navbar-left {
+            margin-left: -6px;
           }
           .paddin-top-amigos {
             padding-top: 150px;
@@ -39,21 +30,48 @@
           .marginCardServices {
             margin-top: 150px;
           }
+          .respLogoAmbulancia {
+            width: 300px;
+            height: 160px;
+          }
+          .respLogoAmbulancia1 {
+            width: 300px;
+            height: 192px;
+          }
+          .img-clinica-carrusel {
+            width: 500px;
+            height: 150px;
+          }
+          .altoCarruselClinica {
+            height: 13rem;
+          }
         }
         @media (min-width: 768px){
+          .respLogoAmbulancia {
+            width: 500px;
+          }
+          .respLogoAmbulancia {
+            width: 500px;
+            height: 192px;
+          }
+          .respLogoAmbulancia1 {
+            width: 500px;
+            height: 288px;
+          }
+          .margin-btn-carrusel {
+            margin-left: 30px ;
+           }
           .marginCard {
             margin-left: 10px;
           }
           .paddin-top-amigos {
             padding-top: 50px;
           }
-          .borderNovedades {
-    border-bottom:2px solid rgba(252, 252, 0, 0.562);
-  }
-  .borderNovedades1 {
-    border-bottom:2px solid rgba(252, 252, 0, 0.562);
-  }
+          .altoCarruselClinica {
+            height: 20rem;
           }
+          }
+          
         @media (min-width: 992px){
          
           .marginNav {
@@ -83,162 +101,143 @@
         }
       </style>
 </head>
-  <body class="fontFamily">
-    <div class="container-fluid bg-clinica-violeta ">
+  <body class="fontFamily bg-clinica">
+     <!-- NAVBAR -->
+     <nav class="container-fluid pt-2">
       <div class="container">
-        <div class="row text-center align-items-center">
-          <p class="h5 p-1 text-white ">EMERGENCIAS Y URGENCIAS MÉDICAS: <span class="fw-bold">03548-15402072</span> </p>
-        </div>
-    </div>
-  </div>
-    <!-- NAVBAR -->
-    <nav id="mobile-back" class="bg-white border-2 border-bottom navbar fontFamily navbar-expand-lg sticky-top letraAzul mt-2">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="./assets/ambulancia-cem.png" class="rounded" id="respLogo" alt="Logotipo de CEM" width="170" height="75" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic" data-aos-duration="3000" data-aos-once="true">
-          </a>
-        <a class="navbar-brand" href="clinica.html">
-          <img src="./assets/bermudezLogo.png" class="rounded" id="respLogo" alt="Logotipo de CEM" width="170" height="70" data-aos="flip-left"
-          data-aos-easing="ease-out-cubic" data-aos-duration="3000" data-aos-once="true">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between fw-bold mt-2" id="navbarNav">
-          <div class="nav-item col-sm-4 mb-4"></div>
-          <div class="nav-item dropdown mb-4 text-center marginDesktop text-secondary">
-            <a class="nav-link dropdown-toggle mouseHeader " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              SOMOS
+        <div class="row justify-content-between mb-2">
+          <div class="col-md-6">
+            <a class="navbar-brand" href="index.html">
+              <img src="./assets/cem-logo.png" class="rounded" id="respLogo" alt="Logotipo de CEM" width="270" height="75" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic" data-aos-duration="3000" data-aos-once="true">
             </a>
-            <ul class="dropdown-menu">
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="nosotros.html">CEM</a></li>
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="clinica.html">Clínica Bermudez</a></li>
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="fundacion.html">Fundación</a></li>
-            </ul>
-        </div>
-          <div class="nav-item dropdown mb-4 text-center marginDesktop text-secondary">
-            <a class="nav-link dropdown-toggle letraAzul mouseHeader " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              SERVICIOS
-            </a>
-            <ul class="dropdown-menu">
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="guardia.html">Emergencias 24hs</a></li>
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="traslados.html">Traslados</a></li>
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="internacion.html">Área protegida</a></li>
-              <li class="mb-2"><a class="sinSubrayado text-secondary ms-3 mouseHeader" href="consultorios.html">Eventos</a></li>
-            </ul>
-        </div>
-          <div class="nav-item col-sm-1 mb-4 text-center marginDesktop">
-            <a href="novedades.html" class="sinSubrayado mouseHeader text-secondary ">NOVEDADES</a>
+          </div>
+          <div class="col-md-6">
+            <div class="row text-center mt-2 mb-3">
+              <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                <a href="" class="sinSubrayado text-white button-62">URGENCIAS</a>
+              </div>
+              <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                <a href="pagos.html" class="sinSubrayado text-white button-63">PAGOS</a>
+              </div>
             </div>
-          <div class="nav-item col-sm-1 mb-4 text-center marginDesktop bgGreenOscuro p-2 rounded">
-            <a class="nav-link text-white" href="turnero.html">
-                  PAGO
-            </a>
-        </div>
-          <div class="nav-item col-sm-1 mb-4 text-center marginDesktop">
-            <a href="contacto.html" class="sinSubrayado mouseHeader text-secondary">CONTACTO</a>
+            <div class="row">
+              <div class="col-3 col-md-3 margin-navbar">
+                <a href="nosotros.html" class="sinSubrayado  text-white button-64">NOSOTROS</a>
+              </div>
+              <div class="col-3 col-md-3 margin-navbar">
+                <a href="servicios.html" class="sinSubrayado  text-white button-64">SERVICIOS</a>
+              </div>
+              <div class="col-3 col-md-3 margin-navbar-left">
+                <a href="contacto.html" class="sinSubrayado text-white button-64 ">CONTACTO</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-  <!-- NAVBAR -->
-    <!-- somos -->
-    <div class="container-fluid">
-            <div class="row">
-                <div class="position-relative imgClinica1 p-3 p-md-5">
-                    <div class="col-md-9 p-lg-5 mx-auto my-5 fontFamily">
-                        <h1 class="display-5 fw-bold text-white">Oportunidades únicas</h1>
-                        <p class="lead fw-normal text-white">30% de descuento Afiliación WEB + Debito Automático Visa-Master-Naranja.</p>
-                        <div class="d-grid gap-2 d-md-block">
-                          <!-- Botones -->
-                          <a href="copab.html" data-aos="zoom-in" data-aos-duration="3000" class="  sinSubrayado">
-                          <button type="button" class="bg-bermudez mouseBtn ps-4 pe-4 pt-2 pb-2 rounded no-border text-white  "
-                          style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
-                          Contactanos
-                        </button>
-                        </a>
-                        </div>
-                    </div>
-                    </div>
-            </div>
-    </div>
-    <!-- somos -->
-    <!-- NOVEDADES   -->
-    <div class="container-fluid">
-      <div class="container">
-        <did class="row text-center ">
-          <div class="col-md-4 borderNovedades"></div>
-          <div class="col-md-4">
-            <h2 class="mt-3 fw-bold text-secondary " data-aos="zoom-in" data-aos-duration="3000">Novedades</h2>
-          </div>
-          <div class="col-md-4 borderNovedades borderNovedades1"></div>
-        </did>
-
-        <!-- cards -->
-        <div class="row justify-content-between">
-          <!-- card1 -->
-          <div class="col-md-3 mt-4" data-aos="zoom-in" data-aos-duration="3000">
-            <a href="novedades.html">
-            <div class="img">
-              <div class="info text-end p-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-              </svg></div>
-                </div> 
-               </a>
-                <p class="h5 colorVerdeOscuro mt-2 ">OFRECEMOS HASTA UN 30% DE DESCUENTO</p>
-              <p class="text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                </svg> 1 Diciembre, 2022
-              </p>
-              <div class="col-md-2 border-2 border border-success mt-2 mb-2"></div>
-              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minus eaque veritatis voluptatem praesentium culpa, voluptas reiciendis? </p>
+     </nav>
+     <!-- NAVBAR -->
+     <!-- title -->
+     <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <img src="./assets/bermudezLogo.png" width="100%"  alt="">
+        </div>
+      </div>
+      <!-- acordion -->
+      <div class="row mt-4 justify-content-between">
+        <div class="col-md-4 mt-3">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers me-3 colorVerdeOscuro" viewBox="0 0 16 16">
+                    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+                  </svg> DE 35 ESPECIALIDADES
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
               </div>
-              <!-- card 2 -->
-              <div class="col-md-3 mt-4" data-aos="zoom-in" data-aos-duration="3000">
-                <a href="novedades.html">
-                <div class="img">
-                  <div class="info text-end p-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                  </svg></div>
-                </div> 
-              </a>
-                    <p class="h5 colorVerdeOscuro mt-2 ">OFRECEMOS HASTA UN 30% DE DESCUENTO</p>
-                  <p class="text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                    </svg> 1 Diciembre, 2022
-                  </p>
-                  <div class="col-md-2 border-2 border border-success mt-2 mb-2"></div>
-                  <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minus eaque veritatis voluptatem praesentium culpa, voluptas reiciendis? </p>
-                  </div>
-                  <!-- cadr 3 -->
-                  <div class="col-md-3 mt-4" data-aos="zoom-in" data-aos-duration="3000">
-                    <a href="novedades.html">
-                    <div class="img">
-                      <div class="info text-end p-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                      </svg></div>
-                    </div> 
-                  </a>
-                        <p class="h5 colorVerdeOscuro mt-2 ">OFRECEMOS HASTA UN 30% DE DESCUENTO</p>
-                      <p class="text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                        </svg> 1 Diciembre, 2022
-                      </p>
-                      <div class="col-md-2 border-2 border border-success mt-2 mb-2"></div>
-                      <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minus eaque veritatis voluptatem praesentium culpa, voluptas reiciendis? </p>
-                      </div>
-                </div>
-                </div>
-                </div>
-    <!-- FIN NOVEDADES -->
-    
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyedropper me-3 colorVerdeOscuro" viewBox="0 0 16 16">
+                    <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708l-2-2zM2 12.707l7-7L10.293 7l-7 7H2v-1.293z"/>
+                  </svg> LABORATORIO
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image me-3 colorVerdeOscuro" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                  </svg> DIAGNÓSTICO POR IMAGEN
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity me-3 colorVerdeOscuro" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                  </svg> CIRUGÍAS E INTERNACIÓN
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+           <!-- INICIO CARRUSEL -->
+           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- primero -->
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1671726805766-de50e4327182?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                 class="d-block w-100 altoCarruselClinica" alt="...">
+              </div>
+              <!-- segundo -->
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1673886138232-e792a8839827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                class="d-block w-100 altoCarruselClinica" alt="...">
+              </div>
+              <!-- tercero -->
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1673831792265-68b44126c999?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=733&q=80"
+                 class="d-block w-100 altoCarruselClinica" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  <!-- FIN CARRUSEL -->
+        </div>
+      </div>
+      <!-- acordion fin -->
+     </div>
+
       <!-- AFILIATE A NOSOTROS -->
       <div class="container-fluid bg-amigos text-white">
         <div class="container">

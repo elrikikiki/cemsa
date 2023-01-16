@@ -29,6 +29,15 @@
     background-position: center;
     background-size: cover;
   }
+  .bg-clinica {
+    height:100%;
+    background:linear-gradient(rgba(255, 255, 255, 0.753), rgba(175, 172, 172, 0.904)), 
+    url(./assets/cama-hospital.jpeg);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .bg-service-card1 {
     height: 30rem;
     background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
@@ -436,7 +445,7 @@
     background: #407bcc;
   }
   .bg-card-contacto {
-    background: linear-gradient(rgba(144, 219, 125, 0.63), rgba(144, 219, 125, 0.63));
+    background: linear-gradient(rgba(177, 243, 160, 0.50), rgba(177, 243, 160, 0.50));
     border-radius:50px;
   }
   .fondo-icon2 {
