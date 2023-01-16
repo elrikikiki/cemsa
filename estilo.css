@@ -20,6 +20,15 @@
     background-position: center;
     background-size: cover;
   }
+  .bg-minita {
+    height:100%;
+    background:linear-gradient(rgba(255, 255, 255, 0.753), rgba(175, 172, 172, 0.904)), 
+    url(./assets/minita-telefono.jpeg);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .bg-service-card1 {
     height: 30rem;
     background:linear-gradient(rgba(54, 243, 126, 0.548), rgba(217, 255, 3, 0.438)), 
@@ -114,6 +123,9 @@
 }
 .colorVerdeOscuro {
   color: #00A859;
+}
+.text-semi-black {
+  color: rgb(83, 83, 83);
 }
 .colorAzul {
   color: #3768AE;
@@ -423,8 +435,10 @@
   .fondo-icon:hover{
     background: #407bcc;
   }
-
-  
+  .bg-card-contacto {
+    background: linear-gradient(rgba(144, 219, 125, 0.63), rgba(144, 219, 125, 0.63));
+    border-radius:50px;
+  }
   .fondo-icon2 {
     width:130px;
     height:95px;
