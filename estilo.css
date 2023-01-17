@@ -5,11 +5,34 @@
     background-color: #DD9BDA; 
     
   }
+  .fontFamily2 {
+    font-family: 'Raleway', sans-serif;
+  }
   .zoomImg {
     transition: transform 0.3s;
   }
   .zoomImg:hover {
     transform: scale(1.1);
+  }
+  .bg-card-mision {
+    background: rgba(120, 145, 228, 0.342);
+    border-radius: 50px;
+  }
+  .bg-blue-dark {
+    background-color: #021c72; 
+  }
+  .bg-card-vision {
+    background-color:rgba(71, 214, 102, 0.342) ;
+    border-radius: 50px;
+  }
+  .texto-borde {
+    
+      -webkit-text-fill-color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1.5px #021e7c;
+      }
+  
+  .colorAzulDark {
+    color: #021e7c;
   }
   .btn-clinica {
     background: linear-gradient(rgba(11, 201, 226, 0.753), rgba(49, 179, 240, 0.904));
