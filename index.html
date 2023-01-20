@@ -55,6 +55,10 @@
             width: 500px;
             height: 288px;
           }
+          .respLogoAmbulancia2 {
+            width: 400px;
+            height: 192px;
+          }
           .margin-btn-carrusel {
             margin-left: 30px ;
            }
@@ -115,9 +119,24 @@
           <div class="col-md-2"></div>
           <div class="col-md-4">
             <div class="row justify-content-end mt-2 mb-3">
-              <div class="col-6 col-sm-3 col-md-3 col-lg-4 col-xl-4 ">
-                <a href="" class="sinSubrayado text-white button-62">URGENCIAS</a>
+              <div class="nav-item dropdown col-6 col-sm-3 col-md-3 col-lg-4 col-xl-4 ">
+                <a href="" class="sinSubrayado text-white button-62 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  URGENCIAS
+                </a>
+                <ul class="dropdown-menu bg-button-62 ">
+                  <li><a class="dropdown-item " href="">422-222</a></li>
+                  <li><a class="dropdown-item" href="">424-222</a></li>
+              </ul>
               </div>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mouseHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                INSTITUCIONAL
+                </a>
+                <ul class="dropdown-menu bgDrop">
+                    <li><a class="dropdown-item" href="nosotros.html">QUIÉNES SOMOS</a></li>
+                    <li><a class="dropdown-item" href="autoridades.html">AUTORIDADES</a></li>
+                </ul>
+              </li> -->
               <div class="col-6 col-sm-3 col-md-3 col-lg-4 col-xl-4">
                 <a href="pagos.html" class="sinSubrayado text-white button-63">PAGOS</a>
               </div>
@@ -143,26 +162,18 @@
      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner ">
         <!-- Primer carrusel -->
-        <div class="carousel-item active ">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-2">
-              <img src="./assets/grafic-cem.png" alt="">
+        <div class="carousel-item pt-5 pb-5 active bg-ambulancia-cuadraditos">
+          <div class="position-relative p-md-5 text-center">
+            <div class="row justify-content-end p-lg-5 mx-auto my-5 fontFamily">
+                
+                <div class="col-md-4 me-5">
+                  <button type="button" class="sinBorder pt-2 pb-2 ps-4 pe-4 rounded bg-success text-white fw-bold "
+                  style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
+                  CONOCÉ MÁS
+                  </button>
+                </div>
             </div>
-            <div class="col-md-3 text-center">
-              <img src="./assets/ambulancia-cem.png" class="respLogoAmbulancia1" alt="Logo del CEM Ambulancia">
             </div>
-            <div class="col-md-3 text-center">
-              <a href="servicios.html" data-aos="zoom-in" class="text-white sinSubrayado">
-                <button type="button" class="btn bg-success text-white fw-bold "
-                style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
-                CONOCÉ MÁS
-                </button>
-              </a>
-            </div>
-            <div class="col-md-2 ">
-              <img src="./assets/grafic-cem.png" alt="">
-            </div>
-          </div>
         </div>
          <!-- Segundo carrusel -->
         <div class="carousel-item">
@@ -173,7 +184,7 @@
               </div>
               <div class="col-md-4 col-lg-5 text-center">
                 <a href="clinica.html" data-aos="zoom-in" class="text-white margin-btn-carrusel sinSubrayado">
-                  <button type="button" class="btn btn-danger  text-white fw-bold "
+                  <button type="button" class="sinBorder pt-2 pb-2 ps-4 pe-4 rounded bg-bermudez text-white fw-bold "
                   style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
                   CONOCÉ MÁS
                   </button>
@@ -187,11 +198,11 @@
           <div class="position-relative p-3 p-md-5 text-center">
             <div class="row justify-content-center align-items-center">
               <div class="col-md-4 text-center">
-                <img src="./assets/logoFundacion.png" class="respLogoAmbulancia" alt="Logo del CEM Ambulancia">
+                <img src="./assets/logoFundacion.png" class="respLogoAmbulancia2" alt="Logo Fundacion Amantar">
               </div>
               <div class="col-md-4 col-lg-5 text-center">
                 <a href="servicios.html" data-aos="zoom-in" class="text-white margin-btn-carrusel sinSubrayado">
-                  <button type="button" class="btn bg-primary text-white fw-bold "
+                  <button type="button" class="sinBorder pt-2 pb-2 ps-4 pe-4 rounded bg-primary text-white fw-bold "
                   style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
                   CONOCÉ MÁS
                   </button>

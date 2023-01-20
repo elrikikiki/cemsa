@@ -34,10 +34,20 @@
   .colorAzulDark {
     color: #021e7c;
   }
+  .border-radius-cruz {
+    border: 5px solid white;
+    border-radius: 80px ;
+  }
   .btn-clinica {
     background: linear-gradient(rgba(11, 201, 226, 0.753), rgba(49, 179, 240, 0.904));
     border: 3px solid rgb(255, 255, 255);
     border-radius: 50px;
+  }
+  .bg-bermudez {
+    background-color: #AC0DA5;
+  }
+  .sinBorder {
+    border: none;
   }
   .bg-urgencia-amarillo {
     background: linear-gradient(rgb(252, 215, 6), rgb(233, 188, 40));
@@ -49,6 +59,14 @@
     background:linear-gradient(rgba(255, 255, 255, 0.753), rgba(175, 172, 172, 0.904)), 
     url(./assets/bg-ambulancia.jpeg);
     /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-ambulancia-cuadraditos {
+    height:100%;
+    background: 
+    url(./assets/ambulancia-cuadraditos.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -272,6 +290,9 @@
 
 .button-62:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.bg-button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
 }
 
 .button-63 {
