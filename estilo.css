@@ -25,6 +25,10 @@
     background-color:rgba(71, 214, 102, 0.342) ;
     border-radius: 50px;
   }
+  .bg-desplegable {
+    background-color:rgb(157, 226, 222) ;
+    border-radius: 50px;
+  }
   .texto-borde {
     
       -webkit-text-fill-color: rgb(255, 255, 255);
