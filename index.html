@@ -22,6 +22,12 @@
     <style>
 
         @media (min-width: 200px){
+          .respGraficCarrusel {
+            width: 100px;
+          }
+          .respAmbuCarrusel {
+            width: 120px;
+          }
           .margin-navbar {
             margin-right: 30px;
           }
@@ -107,8 +113,7 @@
 </head>
   <body class="fontFamily bg-ambulancia">
      <!-- NAVBAR -->
-     <nav class="container-fluid navbar-inverse sticky-top pt-2"  id="menu2">
-      
+     <nav class="container-fluid pb-2 navbar-inverse sticky-top pt-2" id="menu2">
         <div class="row justify-content-between mb-2 ">
           <div class="col-md-6">
             <a class="navbar-brand" href="index.html">
@@ -143,7 +148,7 @@
                 <a href="nosotros.html" class="sinSubrayado  text-white button-64">NOSOTROS</a>
               </div>
               <div class="col-3 col-md-3 margin-navbar">
-                <a href="servicios.html" class="sinSubrayado  text-white button-64">SERVICIOS</a>
+                <a href="index.html#servicios" class="sinSubrayado text-white button-64">SERVICIOS</a>
               </div>
               <div class="col-3 col-md-3 margin-navbar-left">
                 <a href="contacto.html" class="sinSubrayado text-white button-64 ">CONTACTO</a>
@@ -156,74 +161,77 @@
      <!-- NAVBAR -->
 
      <!-- INICIO CARRUSEL -->
-     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner ">
-        <!-- Primer carrusel -->
-        <div class="carousel-item pt-5 pb-5 active bg-ambulancia-cuadraditos">
-          <div class="position-relative p-md-5 text-center">
-            <div class="row justify-content-end p-lg-5 mx-auto my-5 fontFamily">
-                
-                <div class="col-md-4 me-5">
-                  <button type="button" class="sinBorder pt-2 pb-2 ps-4 pe-4 rounded bg-success text-white fw-bold "
-                  style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
-                  CONOCÉ MÁS
-                  </button>
+     <div class="container-fluid"> 
+      <div class="row">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- 1 -->
+            <div class="carousel-item active">
+                <div class="row justify-content-between">
+                  <div class="col-md-2 ">
+                    <img src="./assets/grafic-cem.png" alt="">
+                  </div>
+                  <!-- ambulancia y button -->
+                  <div class="col-md-8 ">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-md-3">
+                        <img src="./assets/ambulancia-cem.png" alt="">
+                      </div>
+                      <div class="col-md-3"></div>
+                      <div class="col-md-2">
+                        <button class="btn btn-success">Continuar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--FIN ambulancia y button -->
+                  <div class="col-md-2">
+                    <img src="./assets/grafic-cem.png" alt="">
+                  </div>
                 </div>
             </div>
-            </div>
-        </div>
-         <!-- Segundo carrusel -->
-        <div class="carousel-item">
-          <div class="position-relative p-3 p-md-5 text-center">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-4 text-center">
-                <img src="./assets/bermudezLogo.png" class="respLogoAmbulancia" alt="Logo del CEM Ambulancia">
+            <!-- fin 1 -->
+
+            <!-- 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="./assets/bermudezLogo.png" width="200px"  alt="...">
+                  
+                </div>
+                <div class="col-md-4">
+                  <a href="clinica.html">
+                    <button>clinica</button>
+                  </a>
+                </div>
               </div>
-              <div class="col-md-4 col-lg-5 text-center">
-                <a href="clinica.html" data-aos="zoom-in" class="text-white margin-btn-carrusel sinSubrayado">
-                  <button type="button" class="sinBorder pt-2 pb-2 ps-4 pe-4 rounded bg-bermudez text-white fw-bold "
-                  style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
-                  CONOCÉ MÁS
-                  </button>
-                </a>
-              </div>
+             
             </div>
+            <!-- fin 2 -->
+
+            <!-- 3 -->
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
             </div>
-        </div>
-        <!-- 3er carrusel -->
-        <div class="carousel-item">
-          <div class="position-relative p-3 p-md-5 text-center">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-4 text-center">
-                <img src="./assets/logoFundacion.png" class="respLogoAmbulancia2" alt="Logo Fundacion Amantar">
-              </div>
-              <div class="col-md-4 col-lg-5 text-center">
-                <a href="servicios.html" data-aos="zoom-in" class="text-white margin-btn-carrusel sinSubrayado">
-                  <button type="button" class="sinBorder pt-2 pb-2 ps-4 pe-4 rounded bg-primary text-white fw-bold "
-                  style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
-                  CONOCÉ MÁS
-                  </button>
-                </a>
-              </div>
-            </div>
-            </div>
+            <!-- fin 3 -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+              <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+            </svg>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+            </svg>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="60" height="60" fill="yellow" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-          <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/> 
-        </svg>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="60" height="60" fill="yellow" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-        </svg>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+  </div>
   <!-- FIN CARRUSEL -->
-        
+
   <!-- REDES -->
   <div class="container-fluid">
     <div class="container mt-4 mb-4">
@@ -234,32 +242,28 @@
       </div>
       <div class="row justify-content-center text-center mt-5 mb-3">
         <div class="col-md-2">
+          <a href="https://www.instagram.com/cempunilla/" target="_blank">
           <img src="./assets/insta.png" width="200px" alt="logo Instagram">
+        </a>
         </div>
           <div class="col-md-2 mt-3">
-            <img src="./assets/logo-fb.png" width="70px" alt="logo Facebook">
+            <a href="https://www.facebook.com/cempunilla" target="_blank">
+              <img id="servicios" src="./assets/logo-fb.png" width="70px" alt="logo Facebook">
+            </a>
           </div>
           
       </div>
       <did class="row text-center">
           <div class="col-md-4 borderNovedades"></div>
-          
           <div class="col-md-4">
-            <h3 class="mt-2 fw-bold " data-aos="zoom-in" data-aos-duration="3000">PLANES Y SERVICIOS</h3>
+            <h3 class="mt-5 fw-bold " data-aos="zoom-in" data-aos-duration="3000">PLANES Y SERVICIOS</h3>
           </div>
           <div class="col-md-4 borderNovedades borderNovedades1"></div>
         </did>
           <div class="row justify-content-between mt-4">
-            <!-- card1 -->
-            <a href="emergencias.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-2 bg-service-card1 text-center  rounded mb-3" 
-            data-aos="zoom-in" data-aos-duration="3000">
-              <div class="marginCardServices zoomImg">
-                <img src="./assets/icons8-hospital-64.png" alt="logo Emergencia" width="55" height="55" class="mb-3"/>
-                <p class="text-white h3 fw-bold">Emergencias 24hs</p>
-              </div>  
-            </a>
+            
             <!-- card2 -->
-            <a href="traslados.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-2 bg-service-card2 text-center  rounded mb-3"
+            <a href="traslados.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-3 bg-service-card2 text-center  rounded mb-3"
             data-aos="zoom-in" data-aos-duration="3000">
               <div class="marginCardServices zoomImg">
                 <img src="./assets/icons8-ambulance-80.png" alt="logo Traslados" width="55" height="55" class="mb-3"/>
@@ -267,7 +271,7 @@
               </div>  
             </a>
             <!-- card3 -->
-            <a href="emergencias.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-2 bg-service-card3 text-center rounded mb-3"
+            <a href="emergencias.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-3 bg-service-card3 text-center rounded mb-3"
             data-aos="zoom-in" data-aos-duration="3000">
               <div class="marginCardServices zoomImg">
                 <img src="./assets/icons8-location-update-50.png" alt="logo área" width="55" height="55" class="mb-3"/>
@@ -275,7 +279,7 @@
               </div>  
             </a>
             <!-- card4 -->
-            <a href="emergencias.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-2 bg-service-card4 text-center rounded mb-3"
+            <a href="emergencias.html" class="sinSubrayado col-sm-2 col-md-3 col-lg-3 bg-service-card4 text-center rounded mb-3"
             data-aos="zoom-in" data-aos-duration="3000">
               <div class="marginCardServices zoomImg">
                 <img src="./assets/icons8-red-carpet-80.png" alt="logo Emergencia" width="55" height="55" class="mb-3"/>
@@ -283,6 +287,98 @@
               </div>  
             </a>
           </div>
+          <!-- FORMULARIO -->
+          <div class="container ">
+            <div class="row mt-5 justify-content-between">
+              <div class="col-md-5 mt-5">
+                <p class="display-6 colorAzulDark fw-bold">PLANES DE SALUD CON LOS SERVICIOS QUE MÁS USAS</p>
+                <p class="h4 colorAzulDark fw-bold">!Descuento exclusivo!- Adherite con tu tarjeta de crédito o Débito-
+                  Consultá otras formas de pago
+                </p>
+                <div class="row pt-5 align-items-center">
+                  <div class="col-3 col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" width="100%" alt="">
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" width="100%" alt="">
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Logo_Naranja.png" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="row pt-4 align-items-center">
+                  <div class="col-3 col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Banelco_logo.png" width="100%" alt="">
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <img src="https://seeklogo.com/images/P/pago-facil-2019-logo-8BE6DD28D6-seeklogo.com.png" width="100%" alt="">
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Red_link_logo.png" width="100%" alt="">
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/stores/001/068/912/rte/220b202974fdd9df42e1b7bb18199c59.png" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="row  pt-4 align-items-center">
+                  <div class="col-3 col-md-2">
+                    <img src="https://infonegocios.info/content/images/2022/07/20/5191/conversions/rapipago-2021-800x453-medium-size.jpg" width="100%" alt="">
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <img src="https://seeklogo.com/images/M/mercado-pago-logo-52B7182205-seeklogo.com.png" width="100%" alt="">
+                  </div>
+                </div>
+              </div>
+              <form class="col-md-5 mt-5 pt-3 pb-3 rounded bg-blue-dark text-white">
+                
+               <h3 class="text-white text-center">COTIZADOR</h3>
+               <div class="mb-2">
+                <label class="form-label">Nombre y Apellido</label>
+                <input type="text" placeholder="Luis Perez" class="form-control">
+              </div>
+               <div class="mb-2">
+                <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
+              </div>
+              <div class="row justify-space-around">
+                <div class="col-md-4 mt-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>CANT PERS</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  
+                </div>
+                <div class="col-md-8 mt-4">
+              <input type="number" placeholder="Teléfono"  class="form-control">
+                </div>
+              </div>
+              <select class="form-select mt-4" aria-label="Default select example">
+                <option selected>Provincia</option>
+                <option value="1">Córdoba</option>
+                <option value="2">Buenos Aires</option>
+                <option value="3">Santa Fé</option>
+              </select>
+              <select class="form-select mt-4" aria-label="Default select example">
+                <option selected>Ver si puedo conectar Prov con Localidad</option>
+                <option value="1">La Falda</option>
+                <option value="2">Capital</option>
+                <option value="3">San Francisco</option>
+              </select>
+              <div class="row justify-content-center align-items-center pt-3">
+                <div class="col-3 col-md-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" width="100%" alt="logo de wsp">
+                </div>
+                <div class="col-6 col-md-3">
+                  <button class="btn btn-secondary text-center">COTIZA YA</button>
+                </div>
+              </div>
+              
+              </form>
+            </div>
+          </div>
+          <!-- FIN FORMULARIO -->
           <!-- MVALORES -->
           <div class="row justify-content-center mt-5 mb-4">
             <div class="col-md-2 mt-3 border-top border-success border-3"></div>
@@ -314,13 +410,30 @@
 
       <!-- AFILIATE A NOSOTROS -->
       <div class="container-fluid bg-amigos text-white">
-        <div class="container">
-          <div class="position-relative p-md-5 text-center">
-            <div class="col-md-9 p-lg-5 mx-auto my-5 fontFamily">
+          <div class="row justify-content-between align-items-end ">
+            <div class="col-md-2 pt-5">
+              <img src="https://www.universal-assistance.com/uablog/wp-content/uploads/2018/09/logo.png" width="100%" alt="">
+          </div>
+          <div class="col-md-5 pt-5">
+            <h1 class="display-5 fw-bold text-white paddin-top-amigos">Asistencia al Viajero:
+              Universal Assistance en todo el país y países limítrofes</h1>
+            <div class="d-grid gap-2 d-md-block text-center">
+              
+              <a href="copab.html" data-aos="zoom-in" data-aos-duration="3000" class=" text-white sinSubrayado">
+              <button type="button" class="bg-yellow mt-4 p-2 rounded no-border mouseBtn4 fw-bold "
+              style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
+              CONTACTAR
+            </button>
+            </a>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+
+            <!-- <div class="col-md-9 p-lg-5 mx-auto my-5 fontFamily">
                 <h1 class="display-5 fw-bold text-white paddin-top-amigos">Asistencia al Viajero:
                   Universal Assistance en todo el país y países limítrofes</h1>
                 <div class="d-grid gap-2 d-md-block">
-                  <!-- Botones -->
+                  
                   <a href="copab.html" data-aos="zoom-in" data-aos-duration="3000" class=" text-white sinSubrayado">
                   <button type="button" class="bg-yellow mt-4 p-2 rounded no-border mouseBtn4 fw-bold "
                   style="--bs-btn-padding-y: .50rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.2rem;">
@@ -328,8 +441,8 @@
                 </button>
                 </a>
                 </div>
-            </div>
-            </div>
+            </div> -->
+            
         </div>
       </div>
       <!-- FINDE AFILIATE -->
@@ -399,14 +512,36 @@
         <div class="container-fluid sticky-bottom">
           <div class="row ">
             <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class=" col-4 text-end mb-2">
+            <div class="col-1"></div>
+            <div class=" col-3 text-end mb-2">
               <a href="" class="btn-wsp" target="_blank">
                 <i class="fa fa-whatsapp icono"></i>
             </a>
             </div>
+            <div class="col-4 mb-4 text-end">
+              <a href="">
+              <button class="btn btn-secondary ">CHATIEMOS</button>
+            </div>
+            </a>
+          </div>
+          <!-- 2do -->
+          <div class="row ">
+            <div class="col-4"></div>
+            <div class="col-1"></div>
+            <div class=" col-3 text-end mb-2">
+              <a href="" class="btn-wsp" target="_blank">
+                <i class="fa fa-whatsapp icono"></i>
+            </a>
+            </div>
+            <div class="col-4 mb-4 text-end">
+              <a href="">
+              <button class="btn btn-secondary "> CHATIEMOS</button>
+            </div>
+            </a>
           </div>
         </div>
+        <!-- 2do -->
+        
         <!-- FIN BOTON WSP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>   
