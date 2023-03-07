@@ -331,39 +331,46 @@
               </div>
               <!-- formulario -->
               <form id="formulario" class="col-md-5 mt-5 pt-3 pb-3 rounded bg-blue-dark text-white">
-                <h3 class="text-white text-center">COTIZADOR</h3>
-                <div class=" mb-2">
-                    <input placeholder="Nombre" name="nombre" id="nombre" type="text" required>
+                <h3 class="text-white text-center fw-bold">COTIZADOR</h3>
+                <div class="row">
+                  <div class=" col-md-6 mt-5">
+                    <input placeholder="Nombre" class="form-control" name="nombre" id="nombre" type="text" required>
                 </div>
-                <div class="box-input">
-                    <input name="apellidos" id="apellidos" type="text" required>
-                    <span data-placeholder="Escriba sus Apellidos"></span>
+                <div class=" col-md-6 mt-5">
+                    <input name="apellidos" id="apellidos" type="text" class="form-control" placeholder="Apellido" required>
                 </div>
-                <div class="box-input">
-                    <input name="email" id="email" type="email" required>
-                    <span data-placeholder="Escriba su Correo Electrónico"></span>
                 </div>
-
+                
+                <div class="row">
+                  <div class="col-md-6 mt-5">
+                    <input name="email" id="email" class="form-control" type="email" placeholder="Correo" required>
+                </div>
+                <div class="col-md-6 mt-5">
+                  <input type="number" id="celular" name="celular" placeholder="Teléfono" class="form-control required">
+                    </div>
+                </div>
                 <div class="row justify-space-around">
-                  <div class="col-md-4 mt-4">
-                    <select class="form-select" name="cantPersonas" id="cantPersonas" required aria-label="Default select example">
+                  <div class="col-md-4 mt-5">
+                    <select class="form-select" name="cantPersonas" id="cantPersonas" required aria-label="Default select example" required>
                       <option selected>CANT PERS</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
-                    
                   </div>
-
-                  <div class="col-md-8 mt-4">
-                <input type="number" id="celular" name="celular" placeholder="Teléfono" class="form-control">
+                  <div class="col-md-8 mt-5">
+                    <input  id="localidad" class="form-control" name="localidad" placeholder="Localidad" type="text" required>
+              </input>
                   </div>
                 </div>
-
-                <input  id="localidad" name="localidad" placeholder="Localidad" type="text">
-              </input>
-                <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
-            </form>
+                <div class="row justify-content-center pt-5">
+                  <button id="submit" type="submit" class="col-6 col-md-4 btn btn-secondary text-center">
+                    <i class="fab fa-whatsapp"></i>
+                    Enviar WhatsApp
+                  </button>
+                </div>
+              </form>
+              
             <script type="text/javascript">
                 $(".box-input input").on("focus", function(){
                     $(this).addClass("focus");
@@ -376,39 +383,9 @@
                 });
         
             </script>
-
-              <!-- <form >
-                
-               
-               <div class="">
-                <label class="form-label">Nombre y Apellido</label>
-                <input type="text" placeholder="Luis Perez" class="form-control">
-              </div>
-               <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
-              </div>
-              
-             
-              <select class="form-select mt-4" aria-label="Default select example">
-                <option selected>Ver si puedo conectar Prov con Localidad</option>
-                <option value="1">La Falda</option>
-                <option value="2">Capital</option>
-                <option value="3">San Francisco</option>
-              </select>
-              <div class="row justify-content-center align-items-center pt-3">
-                <div class="col-3 col-md-2">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" width="100%" alt="logo de wsp">
-                </div>
-                <div class="col-6 col-md-3">
-                  <button class="btn btn-secondary text-center">COTIZA YA</button>
-                </div>
-              </div>
-              
-              </form> -->
             </div>
           </div>
-          <!-- FIN FORMULARIO -->
+          <!-- fin formulario -->
           <!-- MVALORES -->
           <div class="row justify-content-center mt-5 mb-4">
             <div class="col-md-2 mt-3 border-top border-success border-3"></div>
