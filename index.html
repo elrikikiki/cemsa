@@ -329,10 +329,58 @@
                   </div>
                 </div>
               </div>
-              <form class="col-md-5 mt-5 pt-3 pb-3 rounded bg-blue-dark text-white">
+              <!-- formulario -->
+              <form id="formulario" class="col-md-5 mt-5 pt-3 pb-3 rounded bg-blue-dark text-white">
+                <h3 class="text-white text-center">COTIZADOR</h3>
+                <div class=" mb-2">
+                    <input placeholder="Nombre" name="nombre" id="nombre" type="text" required>
+                </div>
+                <div class="box-input">
+                    <input name="apellidos" id="apellidos" type="text" required>
+                    <span data-placeholder="Escriba sus Apellidos"></span>
+                </div>
+                <div class="box-input">
+                    <input name="email" id="email" type="email" required>
+                    <span data-placeholder="Escriba su Correo Electrónico"></span>
+                </div>
+
+                <div class="row justify-space-around">
+                  <div class="col-md-4 mt-4">
+                    <select class="form-select" name="cantPersonas" id="cantPersonas" required aria-label="Default select example">
+                      <option selected>CANT PERS</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                    
+                  </div>
+
+                  <div class="col-md-8 mt-4">
+                <input type="number" id="celular" name="celular" placeholder="Teléfono" class="form-control">
+                  </div>
+                </div>
+
+                <input  id="localidad" name="localidad" placeholder="Localidad" type="text">
+              </input>
+                <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+            </form>
+            <script type="text/javascript">
+                $(".box-input input").on("focus", function(){
+                    $(this).addClass("focus");
+                });
+        
+                $(".box-input input").on("blur", function(){
+                    if($(this).val() == ""){
+                        $(this).removeClass("focus");
+                    }
+                });
+        
+            </script>
+
+              <!-- <form >
                 
-               <h3 class="text-white text-center">COTIZADOR</h3>
-               <div class="mb-2">
+               
+               <div class="">
                 <label class="form-label">Nombre y Apellido</label>
                 <input type="text" placeholder="Luis Perez" class="form-control">
               </div>
@@ -340,26 +388,8 @@
                 <label for="exampleFormControlInput1" class="form-label">Correo</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
               </div>
-              <div class="row justify-space-around">
-                <div class="col-md-4 mt-4">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>CANT PERS</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-                  
-                </div>
-                <div class="col-md-8 mt-4">
-              <input type="number" placeholder="Teléfono"  class="form-control">
-                </div>
-              </div>
-              <select class="form-select mt-4" aria-label="Default select example">
-                <option selected>Provincia</option>
-                <option value="1">Córdoba</option>
-                <option value="2">Buenos Aires</option>
-                <option value="3">Santa Fé</option>
-              </select>
+              
+             
               <select class="form-select mt-4" aria-label="Default select example">
                 <option selected>Ver si puedo conectar Prov con Localidad</option>
                 <option value="1">La Falda</option>
@@ -375,7 +405,7 @@
                 </div>
               </div>
               
-              </form>
+              </form> -->
             </div>
           </div>
           <!-- FIN FORMULARIO -->
@@ -543,6 +573,7 @@
         <!-- 2do -->
         
         <!-- FIN BOTON WSP -->
+        <script src="origen.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>   
     <!-- AOS -->
