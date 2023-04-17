@@ -361,7 +361,25 @@
 .button-64:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 239, 121, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+.btn-grad {
+  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
 
+  border-radius: 30px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
   .bg-amigos {
     height: 26rem;
     background:linear-gradient(rgba(77, 77, 77, 0.4), rgba(250, 250, 250, 0.1)), 
@@ -372,6 +390,7 @@
     background-size: cover;
      /* */
   }
+ 
   @media only screen and (min-width:200px) and (max-width:992px){
     .bg-amigos {
       height: 30rem;
@@ -391,6 +410,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  .bg-transparent-blue {
+    background-color: rgba(43, 63, 180, 0.35);
   }
   .imagen1InicioCarrusel {
     height: 30rem;
@@ -544,4 +566,7 @@
   border: none;
 }
 
+.radius {
+  border-radius: 20%;
+}
 
