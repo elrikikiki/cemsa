@@ -569,4 +569,19 @@
 .radius {
   border-radius: 20%;
 }
+.rhombus {
+  border-radius: 20%;
+  width: 270px;
+  height: 270px;
+  background:linear-gradient(rgba(15, 219, 49, 0.6), rgba(15, 66, 206, 0.6));
+  transform: rotate(45deg);
+}
 
+.rhombus p {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
